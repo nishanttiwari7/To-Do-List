@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1 class="heading">To Do List</h1>
+    <div class="container">
+
+        <!-- Code for first status: Backlog -->
+
+        <div class="card backlog" id="backlog">
+            <h2>Backlog</h2>
+            <ul id="backlog-todos"></ul>
+        </div>
+        
+        <!-- code for second status: To Do -->
+
+        <div class="card todo" id="todo">
+            <h2>To Do</h2>
+            <ul id="todo-todos"></ul>
+        </div>
+
+        <!-- code for third status: Ongoing -->
+
+        <div class="card ongoing" id="ongoing">
+            <h2>Ongoing</h2>
+            <ul id="ongoing-todos"></ul>
+        </div>
+
+        <!-- code for fourth status:- Done -->
+
+        <div class="card done" id="done">
+            <h2>Done</h2>
+            <ul id="done-todos"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

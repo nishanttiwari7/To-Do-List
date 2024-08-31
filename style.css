@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.heading {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1200px;
+    flex-wrap: wrap; /* allows cards to wrap on smaller screens */
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 22%;
+    padding: 15px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    min-width: 250px;
+}    
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+li:hover {
+    transform: scale(1.02);
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:disabled {
+    color: #ccc;
+    cursor: not-allowed;
+}
+
+.nav-btn-left {
+    color: #28a745;
+}
+
+.nav-btn-right {
+    color: #007bff;
+}
+
+/* responsive layout for medium-sized screens */
+@media (max-width: 1024px) {
+    .card {
+        width: 45%; /* Two cards per row */
+    }
+}
+
+/* responsive layout for small screens  */
+@media (max-width: 768px) {
+    .card {
+        width: 90%; 
+        margin: 15px 0;
+    }
+}
+
+/* adjustments for font sizes and button spacing */
+@media (max-width: 480px) {
+    li {
+        font-size: 14px; 
+    }
+    button {
+        font-size: 14px;
+    }
+}
